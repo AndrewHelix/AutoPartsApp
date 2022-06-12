@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/header';
+import { Categories } from './components/menu/Categories';
+import { Route, Routes, useParams } from 'react-router-dom';
+import { Subcategories } from './components/menu/Subcategories';
+import { Subcategory } from './components/menu/Subcategory';
+import { AddPart } from './components/mainArea/AddPart';
+
+import { useAppDispatch, useAppSelector} from './hooks'
+import { fetchVehicles } from './slices/vehicleSlice';
+ 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='app-title'>auto parts app</h1> 
+      <Header />
+      <Categories />
+      <Routes>
+        <Route path='/:category' element={<Subcategories />}></Route>
+        <Route path='/:category/:subcategory' element={<Subcategory />}></Route>
+      </Routes>
+      <AddPart />
     </div>
   );
-}
-
+  }
 export default App;

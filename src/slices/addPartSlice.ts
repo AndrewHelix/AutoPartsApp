@@ -1,63 +1,78 @@
 import { createSlice, PayloadAction, createAsyncThunk } from "@reduxjs/toolkit";
 import type { RootState } from "../store";
+import { fetchParts } from "./partsSlice";
+import {useAppDispatch} from '../hooks'
 
 // Define a type for the slice state
 interface addPartState {
-  newPart : {
+  newPart: {
     [key: string]: {
       [key: string]: {
         name: string;
         price: string;
         for: [];
-        characteristics: {
-          [key: string]: string;
-        };
+        characteristics: "";
       }[];
     };
-  } 
+  };
   showAppPartForm: boolean;
   loadingNewPart: boolean;
 }
 
 // Define the initial state using that type
 const initialState: addPartState = {
-  newPart : {
-    'ПОДВЕСКА': {
-      'АМОРТИЗАТОРЫ': {
+  newPart: {
+    ПОДВЕСКА: {
+      АМОРТИЗАТОРЫ: {
         //@ts-ignore
-        name: '',
-        price: '',
+        name: "",
+        price: "",
         for: [],
-        characteristics: {
-          'sdfsf': '',
-        },
-      }
-    }
+        characteristics: "",
+      },
+    },
   },
   showAppPartForm: false,
-  loadingNewPart: false
+  loadingNewPart: false,
 };
 
 interface PartData {
   category: string;
   subcategory: string;
-  body: {};
+  body: {
+    name: string;
+    price: string;
+    for: string[];
+    characteristics: string;
+  };
+}
+
+async function getNewBody({ category, subcategory, body }: PartData) {
+  const parts = await fetch('http://localhost:3001/categories/');
+  const data = await parts.json();
+  
+  const oldParts = data[category][subcategory]
+  data[category][subcategory] = [...oldParts, body]
+  return data
 }
 
 export const fetchAddPart = createAsyncThunk(
   "fetchAddPart",
   async ({ category, subcategory, body }: PartData) => {
+    const newBody = await getNewBody({ category, subcategory, body })
     const response = await fetch(
-      `http://localhost:3001/${category}/${subcategory}`,
+      `http://localhost:3001/categories/`,
       {
-        method: "POST",
+        method: "PATCH",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
         },
-        body: JSON.stringify(body),
+        body: JSON.stringify(newBody),
       }
     );
+    console.log(category, subcategory)
     const data = await response.json();
+    console.log(newBody)
     return data;
   }
 );
@@ -85,7 +100,7 @@ export const addPartSlice = createSlice({
   },
 });
 
-export const {showAppPartForm} = addPartSlice.actions;
+export const { showAppPartForm } = addPartSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
 export const selectCount = (state: RootState) => state.addPart;

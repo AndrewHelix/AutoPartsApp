@@ -65,46 +65,40 @@
         {
           "name": "STELLOX 87-04993-SX",
           "price": "19.99$",
-          "for": ["peugeot308", "teslamodels"],
-          "characteristics": {
-            "diameter": "20mm",
-            "long": "295/ 415 mm",
-            "Width": "46 mm",
-            "Shock absorber mounting method": "top opening; lower rod",
-            "Country": "China"
-          }
+          "for": [
+            "peugeot 308",
+            "tesla model s"
+          ],
+          "characteristics": "diameter: 20mm; long: 295/ 415 mm; Width: 46 mm; Shock absorber mounting method: top opening; lower rod; Country: China"
         },
         {
           "name": "ASHIKA MA-90009",
           "price": "29.99$",
-          "for": ["peugeot406", "bmwx5"],
-          "characteristics": {
-            "Type of shock absorber": "Gas pressure",
-            "Installation location": "Front axle",
-            "shock absorber system": "two-pipe",
-            "Shock absorber mounting method": "Top rod; bottom hole",
-            "Country": "Italy"
-          }
+          "for": [
+            "peugeot 406",
+            "bmw x5"
+          ],
+          "characteristics": "Type of shock absorber: Gas pressure; Installation location: Front axle; shock absorber system: two-pipe; Shock absorber mounting method: Top rod; bottom hole; Country: Italy"
         }
       ],
       "ПЫЛЬНИК АМОРТИЗАТОРА": [
         {
           "name": "METALCAUCHO 42040",
           "price": "5.49$",
-          "for": ["bmwi8", "teslamodelx"],
-          "characteristics": {
-            "Country": "Spain"
-          }
+          "for": [
+            "bmw i8",
+            "tesla model x"
+          ],
+          "characteristics": "Country: Spain"
         },
         {
           "name": "TOPRAN 103 485",
           "price": "11.19$",
-          "for": ["jigul'batin", "peugeot308"],
-          "characteristics": {
-            "Material": "Thermoplastic",
-            "Installation location": "Front axle, bilateral",
-            "Country": "Germany"
-          }
+          "for": [
+            "jigul' batin",
+            "peugeot 308"
+          ],
+          "characteristics": "Material: Thermoplastic; Installation location: Front axle, bilateral; Country: Germany"
         }
       ],
       "ПРУЖИНЫ": []

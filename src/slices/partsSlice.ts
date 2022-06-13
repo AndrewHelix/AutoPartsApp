@@ -9,9 +9,7 @@ interface partsState {
         name: string,
         price: string,
         for: string,
-        characteristics: {
-          [key: string] : string
-        }
+        characteristics: string
       }[]
     }
   };

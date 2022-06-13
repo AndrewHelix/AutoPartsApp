@@ -28,7 +28,7 @@ export function AddCarsForParts({onChange} : Props) {
     <>
       {
         models.map((model) => (
-          <div>
+          <div key={model.id}>
             <input type="checkbox" id={model.id} value={model.id} onChange={(e) => onChange(e.target.value, e.target.checked)}/>
             <label htmlFor={model.id}>{model.id}</label>
           </div>

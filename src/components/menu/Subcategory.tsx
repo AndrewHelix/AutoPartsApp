@@ -7,9 +7,7 @@ interface Parts {
   name: string;
   price: string;
   for: [];
-  characteristics: {
-    [key: string]: string;
-  };
+  characteristics: '';
 }
 
 export function Subcategory() {
@@ -17,7 +15,6 @@ export function Subcategory() {
   const { category, subcategory } = useParams();
   const categories = useAppSelector((state) => state.parts.categories);
   const vehicleChosen = useAppSelector((state) => state.vehicle.chosenVehicle);
-  //const arrOfParts = categories[category][subcategory]
   useEffect(() => {
     if (Object.keys(categories).length !== 0) {
       //@ts-ignore

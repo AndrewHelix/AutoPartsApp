@@ -19,7 +19,7 @@ export function Subcategories() {
 
   return <div>
     { categoryChoice ? 
-      categoryChoice.map(subcategory => <Link key={subcategory} to={`/${category}/${subcategory}`}>{subcategory}</Link>) : <h3>choice category!!!</h3>
+      categoryChoice.map((subcategory, i) => <Link key={i} to={`/${category}/${subcategory}`}>{subcategory}</Link>) : <h3>choice category!!!</h3>
     }
   </div>;
 }

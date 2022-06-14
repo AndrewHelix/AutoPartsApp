@@ -22,6 +22,7 @@ export const Header: FC = () => {
 
   return (
     <header className="header">
+      <h1 className='app-title'>auto parts app</h1>
       <VehicleChoice cars={getArr(vehicles)} />
     </header>
   );

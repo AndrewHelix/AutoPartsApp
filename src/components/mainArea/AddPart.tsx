@@ -5,6 +5,7 @@ import { AddCarsForParts } from "./AddCarsForParts";
 import { fetchAddPart } from "../../slices/addPartSlice";
 import { AddCategoryForParts } from "./AddCategoryForParts";
 import { getArr } from "../../helpers";
+import './addPart.css'
 
 type StateType = {
   name: string;
@@ -20,7 +21,7 @@ export function AddPart() {
   const dispath = useAppDispatch();
   
   const [body, setBody] = useState<StateType>({
-    name: 'AZAZAZA',
+    name: '',
     price: "",
     for: [],
     characteristics: "",
@@ -81,24 +82,17 @@ export function AddPart() {
     }));
   }
 
- /*  function addCategory(e: ChangeEvent<HTMLInputElement>) {
-    setCategoryInfo(state => ({
-      ...state,
-      [e.target.id] : e.target.value
-    }))
-  } */
-
   return (
     <>
       {isShow ? (
-        <div>
+        <div className="add-part-form">
           <h3>add new part</h3>
           <button onClick={() => dispath(showAppPartForm(false))}>close</button>
           <form>
             <p>Category</p>
-            <AddCategoryForParts value={'category'} items={categories} onChange={addCategoryInfo}/>
+            <AddCategoryForParts name={'category'} items={categories} onChange={addCategoryInfo}/>
             <p>Subcategory</p>
-            <AddCategoryForParts value={'subcategory'} items={subcategories} onChange={addCategoryInfo}/>
+            <AddCategoryForParts name={'subcategory'} items={subcategories} onChange={addCategoryInfo}/>
             <label htmlFor="name">Name</label>
             <input type="text" id="name" onChange={addInfo} />
             <label htmlFor="price">Price</label>

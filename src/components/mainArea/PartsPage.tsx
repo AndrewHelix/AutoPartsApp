@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 interface PartsPageInterface {
   name: string,
   price: string,
-  forCars: [],
+  forCars: string[],
 }
 
 export function PartsPage({name, price, forCars} : PartsPageInterface) {

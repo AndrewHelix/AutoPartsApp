@@ -2,16 +2,19 @@ import { useAppSelector } from "../../hooks";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { PartsPage } from "../mainArea/PartsPage";
+import { CategoriesType } from './Subcategories'
+import { getArr } from '../../helpers'
 
-interface Parts {
+interface Part {
   name: string;
   price: string;
-  for: [];
-  characteristics: '';
+  for: string[];
+  characteristics: string;
+  img: string
 }
 
-export function Subcategory() {
-  const [parts, setParts] = useState<Parts[]>([]);
+export function Subcategory({categories} : CategoriesType) {
+  /* const [parts, setParts] = useState<Parts[]>([]);
   const { category, subcategory } = useParams();
   const categories = useAppSelector((state) => state.parts.categories);
   const vehicleChosen = useAppSelector((state) => state.vehicle.chosenVehicle);
@@ -23,10 +26,22 @@ export function Subcategory() {
       const partsForRender: Parts[] = arrOfParts.filter((part) => part.for.includes(vehicleChosen));
       setParts(partsForRender);
     }
-  }, [category, subcategory, vehicleChosen]);
+  }, [category, subcategory, vehicleChosen]); */
+  const [parts, setParts] = useState<Part[]>([]);
+  const chosenCategory = useAppSelector(state => state.parts.chosenCategory);
+  const chosenSubcategory = useAppSelector(state => state.parts.chosenSubcategory);
+  const vehicleChosen = useAppSelector((state) => state.vehicle.chosenVehicle);
+
+  useEffect(() => {
+    if(chosenSubcategory) {
+      const arrOfParts : Part[] = categories[chosenCategory][chosenSubcategory];
+      const partsForRender: Part[] = arrOfParts.filter((part) => part.for.includes(vehicleChosen));
+      setParts(partsForRender)
+    }
+  }, [chosenSubcategory])
 
   return (
-    <div>
+    <div >
       {parts.length ? (
         parts.map((part) => (
           <PartsPage

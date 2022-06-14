@@ -1,12 +1,27 @@
 import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
-import { useAppSelector } from "../../hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks";
 import { getArr } from "../../helpers";
-import { useEffect } from 'react'
+import { useEffect } from "react";
+import { chooseSubcategory } from '../../slices/partsSlice'
+import { Subcategory } from './Subcategory'
+import './subcategory.css'
 
+export type CategoriesType = {
+  categories: {[key: string]: {
+      [key: string]: {
+          name: string;
+          price: string;
+          for: string[];
+          characteristics: string;
+          img: string
+      }[];
+  };
+}
+}
 
-export function Subcategories() {
-  const [categoryChoice, setChoice] = useState<string[]>([]);
+export function Subcategories({ categories }: CategoriesType) {
+  /*  const [categoryChoice, setChoice] = useState<string[]>([]);
   const {category} = useParams();
   const categories = useAppSelector(state => state.parts.categories);
   //@ts-ignore
@@ -15,14 +30,32 @@ export function Subcategories() {
       //@ts-ignore
       setChoice(getArr(categories[category]))
     }
-  }, [category])
+  }, [category]) */
+  const dispath = useAppDispatch();
+  const chooseCategory = useAppSelector((state) => state.parts.chosenCategory);
+  const [subcategories, setSubcategories] = useState<string[]>([])
 
-  return <div>
-    { categoryChoice ? 
-      categoryChoice.map((subcategory, i) => <Link key={i} to={`/${category}/${subcategory}`}>{subcategory}</Link>) : <h3>choice category!!!</h3>
+  useEffect(() => {
+    if(chooseCategory.length) {
+      setSubcategories(getArr(categories[chooseCategory]))
     }
-  </div>;
+  }, [chooseCategory])
+
+  return (
+    <div className="view">
+    <div >
+      {subcategories.length ? (
+        subcategories.map((subcategory, i) => (
+          <button key={i} onClick={() => dispath(chooseSubcategory(subcategory))}>
+            {subcategory}
+          </button>
+        ))
+      ) : (
+        <h3>choice category!!!</h3>
+      )}
+    </div>
+    <Subcategory categories={categories}/>
+    </div>
+    
+  );
 }
-
-
-

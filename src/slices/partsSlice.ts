@@ -8,18 +8,23 @@ interface partsState {
       [key: string] : {
         name: string,
         price: string,
-        for: string,
-        characteristics: string
+        for: string[],
+        characteristics: string,
+        img: string,
       }[]
     }
   };
   loadingParts: boolean;
+  chosenCategory: string;
+  chosenSubcategory: string;
 }
 
 // Define the initial state using that type
 const initialState: partsState = {
   categories: {},
   loadingParts: false,
+  chosenCategory: '',
+  chosenSubcategory: '',
 };
 
 export const fetchParts = createAsyncThunk(
@@ -35,7 +40,12 @@ export const partsSlice = createSlice({
   // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   reducers: {
-    
+    chooseCategory: (state, action: PayloadAction<string>) => {
+      state.chosenCategory = action.payload
+    },
+    chooseSubcategory: (state, action: PayloadAction<string>) => {
+      state.chosenSubcategory = action.payload
+    }
   },
   extraReducers: {
     "fetchParts/pending": (state) => {
@@ -51,7 +61,7 @@ export const partsSlice = createSlice({
   },
 });
 
-//export const {vehicleSelected} = vehicleSlice.actions;
+export const {chooseCategory, chooseSubcategory} = partsSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
 export const selectCount = (state: RootState) => state.parts;

@@ -1,4 +1,14 @@
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
+} */
+
+.header {
+  grid-area: header;
+}
+
+.app-title {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
 }

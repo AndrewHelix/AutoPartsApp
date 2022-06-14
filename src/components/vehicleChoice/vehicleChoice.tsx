@@ -1,5 +1,6 @@
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { vehicleSelected, vehicleChosen } from "../../slices/vehicleSlice";
+import './vehicleChoice.css'
 
 interface PropsInterface {
   cars: string[];
@@ -13,8 +14,8 @@ export function VehicleChoice({ cars }: PropsInterface) {
   const models = vehicles[brand];
 
   return (
-    <>
-      <select
+    <div className="select-vehicles-wrapper">
+      <select className="select-vehicles"
         onChange={(e) => {
           dispath(vehicleSelected(e.target.value))
           dispath(vehicleChosen(''))
@@ -28,7 +29,7 @@ export function VehicleChoice({ cars }: PropsInterface) {
         ))}
       </select>
       {brand !== "" ? (
-        <select
+        <select className="select-vehicles"
           onChange={e => dispath(vehicleChosen(e.target.value))}
         > 
           <option value={''}>Выберите модель</option>
@@ -39,8 +40,8 @@ export function VehicleChoice({ cars }: PropsInterface) {
           ))}
         </select>
       ) : (
-        <span>Выберите брэнд</span>
+        <span className="select-waiting">Выберите брэнд</span>
       )}
-    </>
+    </div>
   );
 }

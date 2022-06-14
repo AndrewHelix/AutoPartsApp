@@ -8,20 +8,28 @@ import { AddPart } from './components/mainArea/AddPart';
 
 import { useAppDispatch, useAppSelector} from './hooks'
 import { fetchVehicles } from './slices/vehicleSlice';
- 
+
+import { Layout } from './components/Layout';
+import { PartPage } from './components/PartPage';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='app-title'>auto parts app</h1> 
-      <Header />
-      <Categories />
+    <>
       <Routes>
-        <Route path='/:category' element={<Subcategories />}></Route>
-        <Route path='/:category/:subcategory' element={<Subcategory />}></Route>
+        <Route path='/' element={<Layout />} />
+        <Route path='/:name' element={<PartPage />}></Route>
       </Routes>
-      <AddPart />
-    </div>
+    
+      {/* <h1 className='app-title'>auto parts app</h1> 
+      <Header />
+      <Categories /> */}
+      {/* <Subcategories /> */}
+      {/* <Routes>
+        <Route path='/:category' element={}></Route>
+        <Route path='/:category/:subcategory' element={<Subcategory />}></Route>
+      </Routes> */}
+      {/* <AddPart /> */}
+    </>
   );
   }
 export default App;

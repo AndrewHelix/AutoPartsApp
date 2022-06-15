@@ -51,10 +51,6 @@
   align-items: center;
 }
 
-.add-part-data-wrapper div span{
-  flex-shrink: 0;
-}
-
 .add-part-inputs-wrapper {
   display: flex;
 }

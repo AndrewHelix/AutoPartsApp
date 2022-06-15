@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout';
-import { PartPage } from './components/PartPage';
+import { PartPage } from './components/partPage/PartPage';
 
 function App() {
   return (

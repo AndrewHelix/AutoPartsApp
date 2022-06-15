@@ -21,8 +21,8 @@ export function Categories() {
       <div className="menu">
         <ul className="category-list">
           {getArr(categories).map((category, index) => (
-            <li className="category-item">
-              <button className="category-btn" key={index} onClick={() => dispath(chooseCategory(category))}>
+            <li className="category-item" key={category} >
+              <button className="category-btn" onClick={() => dispath(chooseCategory(category))}>
                 <span>{category}</span>
               </button>
             </li>

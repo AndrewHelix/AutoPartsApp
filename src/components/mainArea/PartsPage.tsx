@@ -11,11 +11,11 @@ interface PartsPageInterface {
 
 const hoverHandler = (e: MouseEvent<HTMLImageElement>) => {
   //@ts-ignore
-  e.target.classList.toggle('scale')
+  e.target.classList.toggle('scale-x2')
 }
 
 export function PartsPage({name, price, img, forCars} : PartsPageInterface) {
-  return <li  className='part-list-item' >
+  return <li  className='part-list-item'>
     
       <img src={img} alt={name} onMouseOver={hoverHandler} onMouseLeave={hoverHandler}/>
       <h5 className='part-list-item-title'>Name: {name}</h5>

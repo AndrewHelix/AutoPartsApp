@@ -132,8 +132,9 @@ export function AddPart() {
                   name="characteristics"
                   id="characteristics"
                   onChange={addInfo}
+                  placeholder='Use this format - Property: value;'
                 ></textarea>
-                <span>Please use this format <br/> Property: value;</span>
+                
               </div>
             </div>
            

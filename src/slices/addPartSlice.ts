@@ -36,7 +36,7 @@ const initialState: addPartState = {
   loadingNewPart: false,
 };
 
-interface PartData {
+export interface PartData {
   category: string;
   subcategory: string;
   body: {

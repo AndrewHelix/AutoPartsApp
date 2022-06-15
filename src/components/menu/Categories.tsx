@@ -19,16 +19,16 @@ export function Categories() {
   return (
     <>
       <div className="menu">
-      <ul className="category-list">
-        {getArr(categories).map((category, index) => (
-          <li className="category-item">
-            <button className="category-btn" key={index} onClick={() => dispath(chooseCategory(category))}>
-              <span>{category}</span>
-            </button>
-          </li>
-        ))}
-      </ul>
-      <button onClick={() => dispath(showAppPartForm(true))}><span>Add new part</span></button>
+        <ul className="category-list">
+          {getArr(categories).map((category, index) => (
+            <li className="category-item">
+              <button className="category-btn" key={index} onClick={() => dispath(chooseCategory(category))}>
+                <span>{category}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
+        <button className="add-part-btn" onClick={() => dispath(showAppPartForm(true))}><span>Add new part</span></button>
       </div>
       
       <Subcategories categories={categories}/>

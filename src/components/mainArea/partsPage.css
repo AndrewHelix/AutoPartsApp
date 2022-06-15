@@ -1,0 +1,28 @@
+.part-list-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 5vw;
+    width: 90%;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.part-list-item img{
+    max-width: 120px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.part-list-item-title {
+    margin: 0;
+    line-height: 0;
+    font-size: 18px;
+}
+
+.scale {
+    transform: scale(2.5);
+    border-radius: 50%;
+}
+
+

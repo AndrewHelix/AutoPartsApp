@@ -1,60 +1,60 @@
 {
   "vehicles": {
-    "peugeot": [
+    "Peugeot": [
       {
         "model": "406",
-        "id": "peugeot 406",
+        "id": "Peugeot 406",
         "photo": "url"
       },
       {
         "model": "308",
-        "id": "peugeot 308",
+        "id": "Peugeot 308",
         "photo": "url"
       }
     ],
-    "bmw": [
+    "BMW": [
       {
-        "model": "m3",
-        "id": "bmw 3",
+        "model": "M3",
+        "id": "BMW M3",
         "photo": "url"
       },
       {
-        "model": "x5",
-        "id": "bmwx 5",
+        "model": "X5",
+        "id": "BMW X5",
         "photo": "url"
       },
       {
         "model": "i8",
-        "id": "bmw i8",
+        "id": "BMW i8",
         "photo": "url"
       }
     ],
-    "tesla": [
+    "Tesla": [
       {
-        "model": "model 3",
-        "id": "tesla model 3",
+        "model": "Model 3",
+        "id": "Tesla Model 3",
         "photo": "url"
       },
       {
-        "model": "model s",
-        "id": "tesla model s",
+        "model": "Model S",
+        "id": "Tesla Model S",
         "photo": "url"
       },
       {
-        "model": "model x",
-        "id": "tesla model x",
+        "model": "Model X",
+        "id": "Tesla Model X",
         "photo": "url"
       },
       {
-        "model": "model y",
-        "id": "tesla model y",
+        "model": "Model Y",
+        "id": "Tesla Model Y",
         "photo": "url"
       }
     ],
-    "jigul'": [
+    "Жигуль": [
       {
-        "model": "batin",
-        "id": "jigul' batin",
+        "model": "Батин",
+        "id": "Жигуль Батин",
         "photo": "url"
       }
     ]
@@ -66,8 +66,8 @@
           "name": "STELLOX 87-04993-SX",
           "price": "19.99$",
           "for": [
-            "peugeot 308",
-            "tesla model s"
+            "Peugeot 308",
+            "Tesla Model S"
           ],
           "characteristics": "diameter: 20mm; long: 295/ 415 mm; Width: 46 mm; Shock absorber mounting method: top opening; lower rod; Country: China",
           "img": ""
@@ -76,11 +76,11 @@
           "name": "ASHIKA MA-90009",
           "price": "29.99$",
           "for": [
-            "peugeot 406",
-            "bmw x5"
+            "Peugeot 406",
+            "BMW X5"
           ],
           "characteristics": "Type of shock absorber: Gas pressure; Installation location: Front axle; shock absorber system: two-pipe; Shock absorber mounting method: Top rod; bottom hole; Country: Italy",
-          "img": ""
+          "img": "https://digital-assets.tecalliance.services/images/400/22be7a0f7201f4bcebde921e8f41869a52ba5372.jpg"
         }
       ],
       "ПЫЛЬНИК АМОРТИЗАТОРА": [
@@ -88,8 +88,8 @@
           "name": "METALCAUCHO 42040",
           "price": "5.49$",
           "for": [
-            "bmw i8",
-            "tesla model x"
+            "BMW i8",
+            "Tesla Model X"
           ],
           "characteristics": "Country: Spain",
           "img": ""
@@ -98,8 +98,8 @@
           "name": "TOPRAN 103 485",
           "price": "11.19$",
           "for": [
-            "jigul' batin",
-            "peugeot 308"
+            "Жигуль Батин",
+            "Peugeot 308"
           ],
           "characteristics": "Material: Thermoplastic; Installation location: Front axle, bilateral; Country: Germany",
           "img": ""

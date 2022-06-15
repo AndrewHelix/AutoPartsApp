@@ -1,3 +1,77 @@
 .view {
   grid-area: view;
 }
+
+.active-link {
+  border-radius: 4px;
+  background-color: yellow;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.subcategory-btn {
+  vertical-align:middle;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.subcategory-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.subcategory-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  bottom: -30px;
+  transform: translate(-50%);
+  transition: 0.3s;
+  font-size: 28px;
+  height: max-content;
+  transform: rotate(90deg);
+}
+
+.subcategory-btn:hover span {
+  padding-bottom: 25px;
+}
+
+.subcategory-btn:hover span:after {
+  opacity: 1;
+  bottom: -10px;
+}
+
+.subcategory-btns-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .parts-list li {
+  width: 90%;
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+} */

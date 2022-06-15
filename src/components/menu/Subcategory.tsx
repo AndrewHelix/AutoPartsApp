@@ -31,17 +31,17 @@ export function Subcategory({categories} : CategoriesType) {
   const chosenCategory = useAppSelector(state => state.parts.chosenCategory);
   const chosenSubcategory = useAppSelector(state => state.parts.chosenSubcategory);
   const vehicleChosen = useAppSelector((state) => state.vehicle.chosenVehicle);
-
   useEffect(() => {
     if(chosenSubcategory) {
       const arrOfParts : Part[] = categories[chosenCategory][chosenSubcategory];
       const partsForRender: Part[] = arrOfParts.filter((part) => part.for.includes(vehicleChosen));
       setParts(partsForRender)
+      
     }
   }, [chosenSubcategory])
 
   return (
-    <div >
+    <ul className="parts-list">
       {parts.length ? (
         parts.map((part) => (
           <PartsPage
@@ -49,11 +49,12 @@ export function Subcategory({categories} : CategoriesType) {
             name={part.name}
             price={part.price}
             forCars={part.for}
+            img={part.img}
           />
         ))
       ) : (
         <h3>we don't have any parts</h3>
       )}
-    </div>
+    </ul>
   );
 }

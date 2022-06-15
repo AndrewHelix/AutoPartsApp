@@ -42,6 +42,7 @@
   right: -20px;
   transition: 0.3s;
   font-size: 28px;
+  height: max-content;
 }
 
 .category-btn:hover span {
@@ -51,4 +52,40 @@
 .category-btn:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.add-part-btn {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 14px;
+  margin: 5px;
+  width: 200px;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.add-part-btn:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  transition: 0.2s
+}
+
+.add-part-btn:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  transition: 0.2s
 }

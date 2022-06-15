@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { getArr } from "../../helpers";
@@ -43,17 +43,17 @@ export function Subcategories({ categories }: CategoriesType) {
 
   return (
     <div className="view">
-    <div >
-      {subcategories.length ? (
-        subcategories.map((subcategory, i) => (
-          <button key={i} onClick={() => dispath(chooseSubcategory(subcategory))}>
-            {subcategory}
-          </button>
-        ))
-      ) : (
-        <h3>choice category!!!</h3>
-      )}
-    </div>
+      <div className="subcategory-btns-wrapper">
+        {subcategories.length ? (
+          subcategories.map((subcategory, i) => (
+            <button className="subcategory-btn" key={i} onClick={() => dispath(chooseSubcategory(subcategory))}>
+              <span>{subcategory}</span>
+            </button>
+          ))
+        ) : (
+          <h3>choice category!!!</h3>
+        )}
+      </div>
     <Subcategory categories={categories}/>
     </div>
     

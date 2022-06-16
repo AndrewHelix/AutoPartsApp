@@ -20,6 +20,13 @@
     font-size: 18px;
 }
 
+.parts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
 .scale-x2 {
     transform: scale(2.5);
     border-radius: 50%;

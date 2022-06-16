@@ -63,60 +63,442 @@
     "ПОДВЕСКА": {
       "АМОРТИЗАТОРЫ": [
         {
-          "name": "STELLOX 87-04993-SX",
-          "price": "19.99$",
+          "name": "STELLOX 3114-0010-SX",
+          "price": "88.70$",
           "for": [
-            "Peugeot 308",
-            "Tesla Model S"
+            "Peugeot 406"
           ],
-          "characteristics": "diameter: 20mm; long: 295/ 415 mm; Width: 46 mm; Shock absorber mounting method: top opening; lower rod; Country: China",
-          "img": ""
+          "characteristics": "Type of shock absorber: Oil pressure; Installation location: rear axle; Shock absorber mounting method: Top rod, bottom hole; Country: PRC",
+          "img": "https://remzona.by/content/3532855.jpeg"
         },
         {
-          "name": "ASHIKA MA-90009",
-          "price": "29.99$",
+          "name": "JAPKO MJ00380",
+          "price": "112.90$",
           "for": [
-            "Peugeot 406",
-            "BMW X5"
+            "Peugeot 406"
           ],
-          "characteristics": "Type of shock absorber: Gas pressure; Installation location: Front axle; shock absorber system: two-pipe; Shock absorber mounting method: Top rod, bottom hole; Country: Italy",
-          "img": "https://digital-assets.tecalliance.services/images/400/22be7a0f7201f4bcebde921e8f41869a52ba5372.jpg"
+          "characteristics": "Type of shock absorber: Gas pressure; Installation location: Rear axle; Shock absorber mounting method: Top rod, bottom hole; Country: Italy",
+          "img": "https://cdn.autoersatzteile.de/thumb?id=8833276&m=0&n=0&lng=ru&rev=94077826"
+        },
+        {
+          "name": "JAPANPARTS MM-00613",
+          "price": "126.30$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Type of shock absorber: Gas pressure; Installation location: Rear axle; Shock Absorber System: Dual Tube; Shock absorber mounting method: Top rod, bottom hole; Country: Italy",
+          "img": "https://cdn.autocontent.lv/media/catalog/product/1/5/156_mm-00613_1.jpg"
+        },
+        {
+          "name": "MEYLE 11-26 715 0013",
+          "price": "135.80$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Type of shock absorber: Oil pressure; Installation location: Rear axle; Shock Absorber System: Dual Tube; Shock absorber mounting method: Top rod, bottom hole",
+          "img": "https://remzona.by/content/1508384.jpeg"
+        },
+        {
+          "name": "TORR DV1144R",
+          "price": "144.40$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Country: Germany",
+          "img": "https://remzona.by/content/4255489.png"
         }
       ],
       "ПЫЛЬНИК АМОРТИЗАТОРА": [
         {
-          "name": "METALCAUCHO 42040",
-          "price": "5.49$",
+          "name": "STC T402933",
+          "price": "15.50$",
           "for": [
-            "BMW i8",
-            "Tesla Model X"
+            "Peugeot 406"
           ],
-          "characteristics": "Country: Spain",
-          "img": ""
+          "characteristics": "The weight: 60g; Installation location: Front axle; Not for article N: 1550",
+          "img": "https://remzona.by/content/3662873.jpeg"
         },
         {
-          "name": "TOPRAN 103 485",
-          "price": "11.19$",
+          "name": "METALCAUCHO 02933",
+          "price": "16.30$",
           "for": [
-            "Жигуль Батин",
-            "Peugeot 308"
+            "Peugeot 406"
           ],
-          "characteristics": "Material: Thermoplastic; Installation location: Front axle, bilateral; Country: Germany",
-          "img": ""
+          "characteristics": "The weight: 60g; Installation location: Front axle; Not for article N: 1550; Country: Spain",
+          "img": "https://remzona.by/content/3657280.jpeg"
+        },
+        {
+          "name": "SASIC 2545265",
+          "price": "16.30$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "For OE No: 525426; Installation location: Front axle left, on right; Type of instalation: Rubber-metal support; Country: France",
+          "img": "https://remzona.by/content/2149124.jpeg"
         }
       ],
-      "ПРУЖИНЫ": []
+      "ПРУЖИНЫ": [
+        {
+          "name": "STELLOX 10-20657-SX",
+          "price": "70.80$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Weight: 4.5 kg; Outer Diameter: 117mm; Length: 386 mm; Number of turns: 6.5; Fitting Position: Rear Axle; Parameter: AC; Spring Form: Helical Spring; Country of origin: China",
+          "img": "https://remzona.by/content/3527165.jpeg"
+        },
+        {
+          "name": "KYB RC5421",
+          "price": "74.50$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Weight: 2.13 kg; Outer Diameter: 117mm; Length: 367 mm; Fitting Position: Rear Axle; Parameter: AC; Thickness 1: 13mm; Spring Form: Helical Spring; Country of origin: Germany",
+          "img": "http://pubimg.4mycar.ru/images/08266142a26955e217659f7974e5d137bb95ec0002.jpeg"
+        },
+        {
+          "name": "LESJOFORS 4066721",
+          "price": "155.70$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Installation location: front axle; Spring Form: Helical Spring; Country of origin: Sweden",
+          "img": "https://remzona.by/content/1691917.jpeg"
+        }
+      ],
+      "СТОЙКИ СТАБИЛИЗАТОРА": [
+        {
+          "name": "STELLOX 56-00236A-SX",
+          "price": "19.90$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "External thread: M12x1.5mm; Length: 320 mm; Fitting Position: Front axle, left and right; Rack: Connecting rod; Country of origin: China",
+          "img": "https://remzona.by/content/5132261.jpeg"
+        },
+        {
+          "name": "FORMPART 2108006",
+          "price": "19.50$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Length: 320 mm; Fitting Position: Front axle, left and right; Rack: Connecting rod; Country of origin: Turkey",
+          "img": "https://remzona.by/content/3791818.jpeg"
+        },
+        {
+          "name": "METALCAUCHO 04056",
+          "price": "20.70$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Weight: 245g; External thread: M 10x1.5mm; Length: 163mm; Fitting Position: Rear Axle; Not for Article N: 2263; Rack: Rod with swinging axle shafts; Country of origin: Spain",
+          "img": "https://remzona.by/content/3657993.jpeg"
+        }
+      ],
+      "РЫЧАГИ": [
+        {
+          "name": "SASIC 5233613",
+          "price": "35.10$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Outer Diameter: 45mm; Inner Diameter: 20mm; Inner length: 45mm; For OE No.: 352361; Installation location: Front axle, behind; Outer length: 34mm; Steering Type: Wishbone (Truck); Country of origin: France",
+          "img": "https://remzona.by/content/2152410.jpeg"
+        },
+        {
+          "name": "TEKNOROT P-445",
+          "price": "180.60$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Installation location: Front Axle Right, Lower",
+          "img": "https://remzona.by/content/5611349.jpeg"
+        }
+      ],
+      "ШАРОВАЯ ОПОРА": [
+        {
+          "name": "STELLOX 52-00368-SX",
+          "price": "18.20$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Installation location: Bottom, at both sides; Cone Size: 16mm; Thread size: M 14 X 1.5; Country of origin: China",
+          "img": "https://remzona.by/content/3534264.jpeg"
+        },
+        {
+          "name": "FORMPART 2103006",
+          "price": "18.50$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Fitting Position: Front Axle left and right, from below; Country of origin: Turkey",
+          "img": "https://remzona.by/content/3791758.jpeg"
+        },
+        {
+          "name": "ETS 04.BJ.456",
+          "price": "22.80$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Weight: 351g; Installation location: Lower; Cone Size: 15.97mm; Country of origin: Turkey",
+          "img": "https://remzona.by/content/5015535.jpeg"
+        }
+      ]
     },
     "СИСТЕМА ВЫПУСКА": {
-      "ГЛУШИТЕЛЬ ВЫХЛОПНЫХ ГАЗОВ": [],
-      "ХОМУТ ГЛУШИТЕЛЯ": [],
-      "ГОФРА ГЛУШИТЕЛЯ": [],
-      "ПЛАМЕГАСИТЕЛЬ": []
+      "ГЛУШИТЕЛЬ ВЫХЛОПНЫХ ГАЗОВ": [
+        {
+          "name": "POLMOSTROW 19.100",
+          "price": "155.60$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Country of origin: Poland",
+          "img": "https://remzona.by/content/4080500.jpeg"
+        },
+        {
+          "name": "POLMOSTROW 19.15",
+          "price": "177.30$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Country of origin: Poland",
+          "img": "https://remzona.by/content/4080511.jpeg"
+        }
+      ],
+      "ХОМУТ ГЛУШИТЕЛЯ": [
+        {
+          "name": "BOSAL 254-920",
+          "price": "9.40$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Diameter: 66mm; Connector: Band Clamp; Thread Size: M8; Country of origin: Belgium",
+          "img": "https://remzona.by/content/576745.jpeg"
+        }
+      ],
+      "ГОФРА ГЛУШИТЕЛЯ": [
+        {
+          "name": "DYNAMAX D45X100",
+          "price": "14.80$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Diameter: 45.5mm; Corrugation diameter: 45; Length: 100mm; Corrugation length: 100; Tolerances and specifications: Inner braid; Connector: Elastic; Overall length: 100mm; Country of origin: Slovakia",
+          "img": "https://remzona.by/content/5569963.jpeg"
+        },
+        {
+          "name": "DYNAMAX D50X100",
+          "price": "15.10$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Diameter: 51.3mm; Corrugation diameter: 50; Length: 100mm; Corrugation length: 100; Tolerances and specifications: Inner braid; Connector: Elastic; Overall length: 100mm; Country of origin: Slovakia",
+          "img": "https://remzona.by/content/5569978.jpeg"
+        },
+        {
+          "name": "STELLOX 69-99003-SX",
+          "price": "20.50$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Diameter: 45mm; Corrugation diameter: 45; Length: 100mm; Corrugation length: 100; Approvals and specifications: Interlock; Connector: Elastic; Installation location: middle; Country of origin: China",
+          "img": "https://remzona.by/content/5133664.jpeg"
+        }
+      ],
+      "ПЛАМЕГАСИТЕЛЬ": [
+        {
+          "name": "LRT 7661",
+          "price": "120.50$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Not suitable for fuel type: Liquefied gas (LPG)",
+          "img": "https://remzona.by/content/1218835.jpeg"
+        },
+        {
+          "name": "BOSAL 099-617",
+          "price": "210.90$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Completeness: With additional materials; Country of origin: Belgium",
+          "img": "https://remzona.by/content/574439.jpeg"
+        }
+      ]
     },
     "ДЕТАЛИ КУЗОВА": {
-      "ПЕРЕДНИЙ БАМПЕР": [],
-      "РЕШЕТКА РАДИАТОРА": [],
+      "ПЕРЕДНИЙ БАМПЕР": [
+        {
+          "name": "TYG PG04016BA",
+          "price": "193.90$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Country of origin: Thailand",
+          "img": "http://pubimg.4mycar.ru/images/full/0885152ed099cdfa0f525e8d5996b3b2a5f86b0002.jpeg"
+        }
+      ],
+      "РЕШЕТКА РАДИАТОРА": [
+        {
+          "name": "KAPARS PG5508",
+          "price": "40.90$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Country of origin: Thailand",
+          "img": "https://remzona.by/content/3388505.jpeg"
+        }
+      ],
       "ЗАДНИЙ БАМПЕР": []
+    },
+    "СЦЕПЛЕНИЕ": {
+      "КОМПЛЕКТ СЦЕПЛЕНИЯ": [
+        {
+          "name": "STELLOX 07-01055-SX",
+          "price": "142.00$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "D1: 201mm; Weight: 4.534 kg; Diameter: 200mm; Number of teeth: 18; Country of origin: China",
+          "img": "https://remzona.by/content/3526639.jpeg"
+        },
+        {
+          "name": "VALEO 801258",
+          "price": "468.20$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "D1: 200mm; D2: 200mm; Version: CPO; Weight: 4.504 kg; Outer Diameter: 200mm;;Outer Diameter 1: 200mm;Buoyancy force: 4250 N; Completeness: With clutch pressure plate; Hub profile: 20.97 x 18.2; Type of drive control: Push control; Number of teeth: 18; Country of origin: France",
+          "img": "https://remzona.by/content/4541367.jpeg"
+        }
+      ],
+      "ВЫЖИМНОЙ ПОДШИПНИК": [
+        {
+          "name": "SKF VKC 2516",
+          "price": "42.00$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Country of origin: Sweden",
+          "img": "https://remzona.by/content/617450.jpeg"
+        },
+        {
+          "name": "LUK 500 0742 10",
+          "price": "80.30$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Country of origin: Germany",
+          "img": "https://remzona.by/content/123763.jpeg"
+        }
+      ]
+    },
+    "СИСТЕМА ОХЛАЖДЕНИЯ": {
+      "ВОДЯНОЙ НАСОС": [
+        {
+          "name": "DYNAMAX DWPN406",
+          "price": "57.20$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Belt pulley: With belt pulley; Number of teeth: 20; Country of origin: Slovakia",
+          "img": "https://remzona.by/content/5078082.jpeg"
+        },
+        {
+          "name": "FENOX HB2615",
+          "price": "81.90$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Country of origin: Belarus",
+          "img": "https://remzona.by/content/2230983.jpeg"
+        }
+      ],
+      "РАДИАТОР ОХЛАЖДЕНИЯ": [
+        {
+          "name": "LORO 038-017-0022",
+          "price": "170.20$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Fuel type: Gasoline; Transmission: Fully automatic transmission; Material: Aluminum; polymer material;Vehicle Equipment: For vehicles with air conditioning; Radiator dimensions: 640x415x34; Country of origin: Poland",
+          "img": "https://remzona.by/content/3641832.jpeg"
+        },
+        {
+          "name": "AVA CNA2107",
+          "price": "273.20$",
+          "for": [
+            "Peugeot 406"
+          ],
+          "characteristics": "Inlet-diameter: 40mm; Outlet-diameter: 40mm; For manufacturer: Valeo; Filter version: With quick coupling;Quality: Alternative; Material: Polymer material; Radiator dimensions: 640x398; Country of origin: Germany",
+          "img": "https://remzona.by/content/3641832.jpeg"
+        }
+      ]
+    },
+    "ФИЛЬТРЫ": {
+      "МАСЛЯНЫЙ ФИЛЬТР": [
+        {
+          "name": "CLEAN FILTERS DO1801",
+          "price": "9.80$",
+          "for": [
+            "Peugeot 308",
+            "BMW X5",
+            "Жигуль Батин"
+          ],
+          "characteristics": "D1: 77mm; Height: 88 mm; Filter version: Spin-on filter; Thread size: M 20 X 1.5; Country of origin: Italy",
+          "img": "https://remzona.by/content/1667167.jpeg"
+        }
+      ],
+      "ВОЗДУШНЫЙ ФИЛЬТР": [
+        {
+          "name": "MFILTER K 165",
+          "price": "18.00$",
+          "for": [
+            "BMW M3",
+            "BMW i8",
+            "Жигуль Батин"
+          ],
+          "characteristics": "Height: 56mm; Length: 325 mm; Width: 155 mm; Country of origin: Lithuania",
+          "img": "https://remzona.by/content/3169214.jpeg"
+        }
+      ],
+      "ТОПЛИВНЫЙ ФИЛЬТР": [
+        {
+          "name": "MEAT & DORIA 4105/1",
+          "price": "16.00$",
+          "for": [
+            "BMW M3",
+            "BMW i8",
+            "BMW X5",
+            "Жигуль Батин"
+          ],
+          "characteristics": "Inlet-diameter: 8mm; Outlet-diameter: 8mm; Height: 137mm; Diameter: 60mm; Material: Steel; Country of origin: Italy",
+          "img": "https://remzona.by/content/2016334.jpeg"
+        }
+      ],
+      "ФИЛЬТР САЛОННЫЙ": [
+        {
+          "name": "FILTRON K1020",
+          "price": "16.20$",
+          "for": [
+            "Tesla Model 3",
+            "Tesla Model S"
+          ],
+          "characteristics": "Height: 30mm; Length: 330 mm; Width: 169mm; Country of origin: Poland",
+          "img": "https://remzona.by/content/2112334.jpeg"
+        },
+        {
+          "name": "KNECHT-MAHLE LAK 59",
+          "price": "87.70$",
+          "for": [
+            "Tesla Model X",
+            "Tesla Model Y"
+          ],
+          "characteristics": "Height: 34mm; Filter version: Activated Carbon Filter; Overall length: 326mm; Width: 165mm; Country of origin: Germany",
+          "img": "https://remzona.by/content/2297751.jpeg"
+        }
+      ]
     }
   }
 }

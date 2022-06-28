@@ -106,6 +106,15 @@
           ],
           "characteristics": "Country: Germany",
           "img": "https://remzona.by/content/4255489.png"
+        },
+        {
+          "name": "TrainingFE",
+          "price": "111",
+          "for": [
+            "Жигуль Батин"
+          ],
+          "characteristics": "",
+          "img": ""
         }
       ],
       "ПЫЛЬНИК АМОРТИЗАТОРА": [

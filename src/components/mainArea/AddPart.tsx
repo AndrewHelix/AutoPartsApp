@@ -7,6 +7,7 @@ import { AddCategoryForParts } from "./AddCategoryForParts";
 import { getArr } from "../../helpers";
 import { PartData } from "../../slices/addPartSlice";
 import './addPart.css'
+import { fetchParts } from "../../slices/partsSlice";
 
 type StateType = {
   name: string;
@@ -86,6 +87,7 @@ export function AddPart() {
   }
 
   function sendPartData({ category, subcategory, body} : PartData) {
+
     dispath(showAppPartForm(false));
     dispath(fetchAddPart({ category, subcategory, body}))
   }

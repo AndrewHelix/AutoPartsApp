@@ -18,7 +18,7 @@ export function PartsPage({name, price, img, forCars} : PartsPageInterface) {
   return <li  className='part-list-item'>
     
       <img src={img} alt={name} onMouseOver={hoverHandler} onMouseLeave={hoverHandler}/>
-      <h5 className='part-list-item-title'>Name: {name}</h5>
+      <h5 className='part-list-item-title'>{`Name: ${name}`} </h5>
       <span>Price: {price}</span>
       <Link to={`/${name}`}>more info...</Link>
     
